@@ -52,7 +52,7 @@ while True:
       mv[mvpos : mvpos+len(s)] = s
       mvpos += len(s)
    try:
-      mqc.publish("hanmeter/data",workbuffert[0:mvpos])
+      mqc.publish(config.MQTTTopic,workbuffert[0:mvpos])
    except:
       machine.soft_reset()
 
