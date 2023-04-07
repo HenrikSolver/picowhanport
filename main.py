@@ -32,7 +32,10 @@ while wlan.status() != 3:
 led.on()
 print("WIFI CONNECTED")
 mqc = MQTTClient("HANMeter", config.MQTTHost, 1883)
-mqc.connect()
+try:
+   mqc.connect()
+except:
+   machine.soft_reset()
 print("MQTT CONNECTED")
 workbuffert = bytearray(1024)
 mv = memoryview(workbuffert)
