@@ -10,7 +10,8 @@ Koppla ihop en 6 pinnars RJ-12 kontakt med picon enligt följande.
 | 5 (data out) | | 7 (UART1 Rx)
 | 6 (GND) | | 38 (GND)|
 
-Sätt ett pull upp motstånd på omkring 3 Kohm mellan 7 (UART1 Rx) 36 (3,3V) på pico
+Sätt ett pull upp motstånd på omkring 3 Kohm mellan 7 (UART1 Rx) 36 (3,3V) på pico. Allt enligt nedanstående schema (bidrag från @speedbird620)
+![bild2](bilder/schema.png)
 
 ## Mjukvara
 Installera micropython och mpremote
